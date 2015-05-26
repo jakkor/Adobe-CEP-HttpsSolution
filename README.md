@@ -1,11 +1,11 @@
 Adobe Premiere Pro HTML5 extension certificate problem
 =======
 
-This is a solution for self signed certificate problems in Adobe HTML5 extensions. I tested that only for Adobe Premiere Pro, but it should probably work in other Adobe applications. You need just to edit manifest.xml file for that.
+This is a solution for self signed certificate problems in Adobe HTML5 extensions. I tested this only in Adobe Premiere Pro, but it should probably work in other Adobe applications. You need just to edit manifest.xml file if you want to be able to launch it elsewhere.
 
 # Problem
 
-Adobe applications have a build in HTML5 browser. We can open there any web page we want. You can test that by opening any extension in Adobe Application, and dragging to it a tab from normal browser like Firefox or Google Chrome. After droping this tab over our extension this webpage should be visible inside the Adobe panel.
+Adobe applications have a build in HTML5 web browser. We can open there any web page we want. You can test that by opening any extension in Adobe Application and dragging to it a tab from normal browser like Firefox or Google Chrome. After dropping this tab into our extension this webpage should be visible inside the Adobe panel.
 
 This is useful when we want to build something that allows us to load content into Adobe application from remote web server.
 
@@ -17,8 +17,7 @@ This extensions have a node.js http proxy server. It is launched every time when
 
 Thanks to that Adobe don't need to make a connection to https website. It's connecting to the http server, so there is no error.
 
-To test that please try to enter an url of a webpage that have a self signed certificate and shows a security risk info in your browser.
-
+To test that please try to enter an url of a webpage that have a self signed certificate and shows a security risk info in your browser.  
 Probably the page will not look exactly the same as in the browser, because resources like css or img files need to have relatives urls so the extension would be able to direct them to the proxy, but at least it will work.
 
 # How to build
@@ -41,6 +40,3 @@ grunt
 # How to run
 
 We can then build extension normally and add to our Extension Manager, or just use the output folder as in Step 1 of building instructions.
-
-
-
