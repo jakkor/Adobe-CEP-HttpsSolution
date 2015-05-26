@@ -1,5 +1,8 @@
 /** Sample output folder for OSX. */
-var outputFolder = "/Users/editor/Library/Application Support/Adobe/CEP/extensions/https/";
+//var outputFolder = "/Users/[username]/Library/Application Support/Adobe/CEP/extensions/https/";
+
+/** Output folder if we don't want to build into extensions folder */
+var outputFolder = "dist/";
 
 module.exports = function(grunt) {
   require('jit-grunt')(grunt);
