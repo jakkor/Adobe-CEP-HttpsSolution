@@ -1,0 +1,22 @@
+{
+  "name": "https",
+  "description": "Example of using https websites with self-signed certificates with wrong common name.",
+  "version": "1.0.0",
+  "authors": [
+    "Jakub Korupczynski <jakub.korupczynski@gmail.com>"
+  ],
+  "moduleType": [
+    "node"
+  ],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "CSInterface-5.2": "https://raw.githubusercontent.com/Adobe-CEP/CEP-Resources/master/CSInterface-5.2.js",
+    "jquery": "1.9.1"
+  }
+}
